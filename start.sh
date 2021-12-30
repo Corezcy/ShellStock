@@ -53,7 +53,7 @@ printStock()
 		if(old=="old"){
 			gap="%"
 		} else {
-			gap=substr((cur-old)/old*100,0,7)
+			gap=substr((cur-old)/old*100,0,5)
 		}
 		if(old=="old"){
 			gapv="delta"
