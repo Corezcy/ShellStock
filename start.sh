@@ -1,14 +1,5 @@
 #!/bin/sh 
 
-# Author: vicklin123@gmail.com
-# Date: 2015-07-20 14:07:54
-# Version: 0.0.1
-#This application helps you to get information of stocks in terminal.
-#Usage:
-# 1. put stock code in the file called "codes", eg. sh000001
-# 2. execute the script "start.sh"(remember to use chmod +x to authorize)
-# 3. if you just want to display short info like cur and % for scret, just execute "start.sh AnyWord"
-
 sinaurl="http://hq.sinajs.cn/list=" 
 context=$(dirname $0)
 short_scret=$1
