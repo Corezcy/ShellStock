@@ -71,7 +71,12 @@ printStock()
 		}
 		
 	}
-	printf("%s  \t",name)
+	if (gap>0) {
+		printf("\033[31m%s\033[0m  \t",name)
+	} else {
+		printf("\033[32m%s\033[0m  \t",name)
+	}
+	# printf("%s  \t",name)
 	# printf("\033[36m%s\033[0m\t",open)
 	# printf("%s\t",old)
 
@@ -142,4 +147,3 @@ main()
 
 # main entrance
 main
-
