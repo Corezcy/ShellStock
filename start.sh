@@ -62,7 +62,10 @@ printStock()
 		}
 		
 	}
-	if (gap>0) {
+	if(gap=="%"){
+		printf("\033[37m%s\033[0m  \t",name)
+	}
+	else if (gap>=0) {
 		printf("\033[31m%s\033[0m  \t",name)
 	} else {
 		printf("\033[32m%s\033[0m  \t",name)
@@ -71,19 +74,28 @@ printStock()
 	# printf("\033[36m%s\033[0m\t",open)
 	# printf("%s\t",old)
 
-	if (gap>0) {
+	if(gap=="%"){
+		printf("\033[37m%s\033[0m\t",cur)
+	}
+	else if (gap>=0) {
 		printf("\033[31m%s\033[0m\t",cur)
 	} else {
 		printf("\033[32m%s\033[0m\t",cur)
 	}
 
-	if (gap>=0) {
+	if(gap=="%"){
+		printf("\033[37m%s\033[0m\t",gap)
+	}
+	else if (gap>=0) {
 		printf("\033[31m%s\033[0m\t",gap)
 	} else if(gap!="-nan"){
 		printf("\033[32m%s\033[0m\t",gap)
 	}
 
-	if (gap>=0) {
+	if(gap=="%"){
+		printf("\033[37m%s\033[0m\t",gapv)
+	}
+	else if (gap>=0) {
 		printf("\033[31m%s\033[0m\t",gapv)
 	} else if(gap!="-nan"){
 		printf("\033[32m%s\033[0m\t",gapv)
