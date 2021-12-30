@@ -9,7 +9,7 @@ $ ./start.sh
 
 
 
-# `How` to add your stocks
+# How to add your stocks
 
 Edit  `./codes`, just put stock codes here:
 ```bash
