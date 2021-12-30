@@ -4,7 +4,7 @@ sinaurl="http://hq.sinajs.cn/list="
 context=$(dirname $0)
 short_scret=$1
 codes=$context"/codes"
-refreshGap=1s
+refreshGap=3s
 
 
 # curl one stock from sina, save cache in $result
