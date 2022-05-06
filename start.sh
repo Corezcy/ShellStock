@@ -101,6 +101,24 @@ printStock()
 		printf("\033[32m%s\033[0m\t",gapv)
 	}
 
+	if(gap=="%"){
+		printf("\033[37m%s\033[0m\t",top)
+	}
+	else if (gap>=0) {
+		printf("\033[31m%s\033[0m\t",top)
+	} else if(gap!="-nan"){
+		printf("\033[32m%s\033[0m\t",top)
+	}
+
+	if(gap=="%"){
+		printf("\033[37m%s\033[0m\t",bottom)
+	}
+	else if (gap>=0) {
+		printf("\033[31m%s\033[0m\t",bottom)
+	} else if(gap!="-nan"){
+		printf("\033[32m%s\033[0m\t",bottom)
+	}
+
 	print"\n"
    }'
   done
